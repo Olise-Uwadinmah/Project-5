@@ -1,0 +1,210 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #fff;
+}
+.container{
+    margin: 0px auto;
+}
+.background-div{
+    position: relative;
+    height: 100vh;
+    background-color: rgba(177, 175, 171, 0.671);
+}
+.back{
+    height: 70vh;
+    width: 320px;
+    
+}
+.purple{
+    background-image:linear-gradient(rgb(230, 10, 131), rgb(226, 11, 208)) ;
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 170px;
+    position: absolute;
+    left: -3%;
+    top: 0px;
+}
+.grey{
+    background-color: antiquewhite;
+    border-top-left-radius: 170px;
+    border-top-right-radius: 170px;
+    position: absolute;
+    right: -0%;
+    bottom: 0px;
+    opacity: 0.3;
+
+}
+.center{
+    position: absolute;
+    width: 900px;
+    left: 19%;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+}
+.phone-design{
+    border-radius: 25px;
+    height: fit-content;
+    width: 30%;
+    border: 10px solid #fff;
+    background-color: rgba(230, 220, 220, 0.966);
+    box-shadow: 20px 20px 30px 10px #8a8989;
+}
+.text{
+    width: 46%;
+    margin-left: 100px;
+    line-height: 1.7;
+    opacity: 1;
+    word-wrap:normal;
+    height: fit-content;
+}
+.head{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 15px 10px;
+    justify-content: space-evenly;
+    background-image:linear-gradient(to right,rgb(230, 10, 131), rgb(226, 11, 208)) ;
+    border-radius: 16px;
+}
+.head .white-space {
+    height: 18px;
+    position: absolute;
+    top: -2px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.name p{
+    font-size: 60%;
+}
+.avatar{
+    border-radius: 50%;
+    width: 30px;
+    border: 4px solid #fff;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+.menu span{
+    width: 2px;
+    height: 2px;
+    border-radius:50%;
+    background-color: #fff;
+    padding: 1px;
+    margin: 1px;
+    
+}
+.received-msg{
+    width: 170px;
+    font-size: 80%;
+    background-color: rgb(201, 201, 201);
+    margin: 5px 5px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border-bottom-left-radius: 5px;
+    font-weight: 600;
+    color: purple;
+    font-size: 70%;
+}
+.msg-img{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 5px;
+}
+.dog-img{
+    width: 50px;
+    border-radius: 8px;
+    margin: 3px;
+}
+.sent-msg{
+    width: 170px;
+    font-size: 80%;
+    background-color: azure;
+    margin: 5px 5px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border-bottom-right-radius: 5px;
+    font-weight: 600;
+    font-size: 70%;
+    color: purple;
+    margin-left: 40px;
+}
+.chat{
+    width: fit-content;
+    margin-left: 45%;
+}
+.radio{
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+    margin: 5px 5px;
+    background-image: linear-gradient(to right,rgb(230, 10, 131), rgb(226, 11, 208));
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.input{
+    opacity: 0.2;
+}
+.area{
+    position: relative;
+    opacity: 0.8;
+}
+.area input{
+    padding: 12px 20px;
+    width: 200px;
+    margin: 5px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.area p{
+    position: absolute;
+    right: 27px;
+    top: 7.5px;
+    font-weight: 900;
+    font-size: 150%;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    padding: 6px;
+    border-radius: 70%;
+    color: white;
+    background-color: rgb(36, 1, 36);
+}
+input::placeholder{
+    font-size: 120%;
+    opacity: 0.8;
+}
+@media screen and (max-width:375px) {
+    .purple{
+        left: -40%;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        position: absolute;
+        left: 15%;
+        width: 250px;
+    }
+    .phone-design{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .background-div{
+        height: fit-content;
+    }
+    .grey{
+        background-color: red;
+    }
+    
+}
